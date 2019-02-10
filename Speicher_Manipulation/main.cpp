@@ -30,7 +30,7 @@ int main()
 		}
 		else
 		{
-			//Aussuchen ob Lesen oder schreiben, Ausgabe unten ändert sich dann auch.
+			//Aussuchen ob Lesen oder schreiben, Ausgabe unten ändert sich dann auch. 
 			//WriteProcessMemory(handle,(LPVOID)0x00D5A4F8, &neuerWert,sizeof(neuerWert),0);
 			ReadProcessMemory(handle, (PBYTE*)0x00D5A4F8, &Auslese, sizeof(int), 0);
 
