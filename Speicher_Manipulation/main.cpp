@@ -4,10 +4,10 @@
 
 int main()
 {
-	//int neuerWert = 100;
+	//int neuerWert = 100; Wenn Write statt auslesen s.u.
 	int Auslese = 0;
 
-	HWND hwnd = FindWindow(NULL, "AssaultCube");
+	HWND hwnd = FindWindow(0, "AssaultCube");
 	if (!hwnd)
 	{
 		std::cout << "nichts gefunden";
@@ -24,7 +24,7 @@ int main()
 
 		if (!procID)
 		{
-			std::cout << "Cannot obtain process." << std::endl;
+			std::cout << "Prozess nicht gefunden." << std::endl;
 			Sleep(3000);
 			exit(-1);
 		}
